@@ -18,7 +18,7 @@ To generate an asm file that mips_to_c can read, type ``python3 tools/mach-disas
 - binutils-powerpc-linux-gnu.
 
 # Decompilation Instructions
-1. Pick a function from the generated asm file (must not be the mips_to_c-compatible version.
+1. Pick a function from the generated asm file (must not be the mips_to_c-compatible version).
 2. Extract that function into its own file, to be placed as ``tmp/orig.s``.
 3. Create a cpp file and place it as ``tmp/code.cpp``.
 4. In a linux shell, type and enter ``COMPILER_FLAGS="-O4" FUNCTION=[Symbol name of function] ./auto_assemble_tmp_code.sh``.
