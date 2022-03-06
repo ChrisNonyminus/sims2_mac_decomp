@@ -1,6 +1,6 @@
 def apply(config, args):
-    config["baseimg"] = "tmp/orig.bin"
-    config["myimg"] = "tmp/code.bin"
+    config["baseimg"] = "tmp/orig.o"
+    config["myimg"] = "tmp/code.o"
     config["mapfile"] = ""
     config["source_directories"] = ["src"]
     config["arch"] = "ppc"
