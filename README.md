@@ -1,6 +1,6 @@
 # sims2_mac_decomp
 
-A WIP logically matching decompilation of The Sims 2 (Bon Voyage update, PowerPC Mac OS X port).
+A WIP matching decompilation (aiming for logical matching decompilation of individual functions as opposed to raw matching of the entire binary... for now) of The Sims 2 (Bon Voyage update, PowerPC Mac OS X port).
 
 Very barebones, and no function is matching yet.
 See the bash and python scripts.
