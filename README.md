@@ -5,7 +5,7 @@ A WIP matching decompilation (aiming for logical matching decompilation of indiv
 Very barebones, and no function is matching yet.
 See the bash and python scripts.
 
-Extract a clean ppc executable of the game (see the sha1 file for the hash) from a universal binary of BV's Mac OS X port, dated December 17, 2007 and place it in the root folder as "baserom.ppc".
+Extract a clean ppc executable of the game (see the sha1 file for the hash) from a universal binary of BV's Mac OS X port, dated December 17, 2007, and place it in the root folder as "baserom.ppc".
 
 To generate an asm file, type ``python3 tools/mach-disasm.py baserom.ppc baserom.sym > asm/sims2.s``.
 To generate an asm file that mips_to_c can read, type ``python3 tools/mach-disasm_m2c-support.py baserom.ppc baserom.sym > asm/sims2.new-syntax.s``.
