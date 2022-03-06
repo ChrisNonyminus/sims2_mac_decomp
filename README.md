@@ -21,7 +21,7 @@ To generate an asm file that mips_to_c can read, type ``python3 tools/mach-disas
 1. Pick a function from the generated asm file (must not be the mips_to_c-compatible version).
 2. Extract that function into its own file, to be placed as ``tmp/orig.s``.
 3. Create a cpp file and place it as ``tmp/code.cpp``.
-4. In a linux shell, type and enter ``COMPILER_FLAGS="-O4" FUNCTION=[Symbol name of function] ./auto_assemble_tmp_code.sh``.
+4. In a linux shell, type and enter ``COMPILER_FLAGS="-O4" FUNCTION=[Symbol name of function] COMPILER_PATH=<path to gcc cross-compiler> ./auto_assemble_tmp_code.sh``.
 5. In a seperate text editor, edit and save ``tmp/code.cpp`` or the generated file ``tmp/compiler_flags.txt``, while the script loops. (It loops so the code can automatically be compiled every time it's changed.)
 6. View ``tmp/diff.txt``.
 7. Repeat steps 5 and 6 until a function is matching.
