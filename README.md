@@ -25,3 +25,6 @@ To generate an asm file that mips_to_c can read, type ``python3 tools/mach-disas
 5. In a seperate text editor, edit and save ``tmp/code.cpp`` or the generated file ``tmp/compiler_flags.txt``, while the script loops. (It loops so the code can automatically be compiled every time it's changed.)
 6. View ``tmp/diff.txt``.
 7. Repeat steps 5 and 6 until a function is matching.
+
+# Externals:
+- asm_differ (https://github.com/simonlindholm/asm-differ)
